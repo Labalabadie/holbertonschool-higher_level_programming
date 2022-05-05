@@ -6,3 +6,4 @@ def best_score(a_dictionary):
             if value > b_dictionary[1]:
                 b_dictionary = key, value
         return b_dictionary[0]
+    return None
