@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Importing json"""
+"""Module that cast a string from an object with JSON"""
 
 import json
 
