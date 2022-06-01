@@ -16,7 +16,7 @@ class Student:
     def to_json(self, attrs=None):
         """Returns a dict"""
         a_dict = dict()
-        if attrs is not None:
+        if type(attrs) is list:
             for attr in attrs:
                 if type(attr) is not str:
                     return self.__dict__
