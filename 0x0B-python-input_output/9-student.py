@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Module that creates a class student """
 
-
 class Student:
     """Class Student"""
 
@@ -13,4 +12,4 @@ class Student:
 
     def to_json(self):
         """Returns a JSON of the class"""
-        return self.__dict__
+        return (self.__dict__)
