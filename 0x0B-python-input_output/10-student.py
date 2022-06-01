@@ -14,13 +14,13 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """Returns a dict"""
-        a_dict = dict()
-        if type(attrs) is list:
-            for attr in attrs:
-                if type(attr) is not str:
-                    return self.__dict__
-                if attr in self.__dict__:
-                    a_dict.update({attr: self.__dict__[attr]})
-            return a_dict
-        return (self.__dict__)
+        """ returns a dict of object attributes """
+        if isinstance(attrs, list):
+            if all(isinstance(elem, str) for elem in attrs):
+                dic = {}
+                for att in attrs:
+                    if att in self.__dict__.keys():
+                        dic[att] = self.__dict__[att]
+                return dic
+        else:
+            return(self.__dict__)
