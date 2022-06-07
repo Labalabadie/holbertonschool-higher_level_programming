@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Neww Class module"""
+"""New Class module"""
 
 
 class Square:
@@ -16,6 +16,15 @@ class Square:
     def area(self):
         """Returns square area"""
         return (self.__size * self.__size)
+
+    def my_print(self):
+        """Prints in stdout, sqauare of '#'"""
+        for i in range(self.size):
+            for j in range(self.size):
+                print("#", end="")
+            print()
+        if self.size == 0:
+            print()
 
     @property
     def size(self):
