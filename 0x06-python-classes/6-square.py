@@ -20,6 +20,9 @@ class Square:
 
     def my_print(self):
         """Prints in stdout, square of '#'"""
+        if self.size == 0:
+            print()
+            return
         for n in range(self.__position[1]):
             print()
         for i in range(self.size):
@@ -27,8 +30,6 @@ class Square:
                 print(" ", end="")
             for j in range(self.size):
                 print("#", end="")
-            print()
-        if self.size == 0:
             print()
 
     @property
