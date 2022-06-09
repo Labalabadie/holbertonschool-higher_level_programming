@@ -22,10 +22,11 @@ class Square:
         """Prints in stdout, square of '#'"""
         if self.size == 0:
             print()
-        for n in range(self.__position[1]):
+            return
+        for n in range(self.position[1]):
             print()
         for i in range(self.size):
-            for k in range(self.__position[0]):
+            for k in range(self.position[0]):
                 print(" ", end="")
             for j in range(self.size):
                 print("#", end="")
@@ -36,6 +37,7 @@ class Square:
         """Gets size"""
         return (self.__size)
 
+    @property
     def position(self):
         """Gets position"""
         return (self.__position)
@@ -49,6 +51,7 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = size
 
+    @position.setter
     def position(self, value):
         """Sets position value"""
         if type(value) is not tuple:
