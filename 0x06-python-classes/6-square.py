@@ -22,7 +22,6 @@ class Square:
         """Prints in stdout, square of '#'"""
         if self.size == 0:
             print()
-            return
         for n in range(self.__position[1]):
             print()
         for i in range(self.size):
