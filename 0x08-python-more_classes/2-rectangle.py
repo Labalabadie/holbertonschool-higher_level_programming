@@ -9,6 +9,15 @@ class Rectangle:
         """Initializes instance"""
         self.height = height
         self.width = width
+        if type(width) is not int:
+            raise TypeError("width must be an integer")
+        if type(height) is not int:
+            raise TypeError("width must be an integer")
+        if height < 0:
+            raise ValueError("height must be >= 0")
+        if width < 0:
+            raise ValueError("width must be >= 0")
+
 
     def area(self):
         """returns area"""
