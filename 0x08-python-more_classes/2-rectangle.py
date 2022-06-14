@@ -16,7 +16,7 @@ class Rectangle:
 
     def perimeter(self):
         """Returns perimeter"""
-        return (self.__width + self.__height) + 2
+        return (self.__width + self.__height) * 2
 
     @property
     def width(self):
