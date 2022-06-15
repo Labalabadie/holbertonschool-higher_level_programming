@@ -14,12 +14,12 @@ class Rectangle:
         """Returns a str representation of a rectangle instance with '#'"""
         if self.__height == 0 or self.__width == 0:
             return
-        str = ""
+        s_str = ""
         for i in range(self.__height):
             for j in range(self.__width):
-                str += '#'
-            str += '\n'
-        return str
+                s_str += '#'
+            s_str += '\n'
+        return s_str
 
     def area(self):
         """returns area"""
