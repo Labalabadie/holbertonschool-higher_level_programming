@@ -19,7 +19,7 @@ class Rectangle:
             for j in range(self.__width):
                 s_str += '#'
             s_str += '\n'
-        return s_str
+        return s_str[:-1]
 
     def area(self):
         """returns area"""
