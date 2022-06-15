@@ -19,7 +19,7 @@ class Rectangle:
             raise ValueError("width must be >= 0")
 
     def __str__(self):
-        """Returns a string representation of a rectangle instance with '#'"""
+        """Returns a str representation of a rectangle instance with '#'"""
         if self.__height == 0 or self.__width == 0:
             return
         str = ""
