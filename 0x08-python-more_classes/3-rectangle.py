@@ -13,7 +13,7 @@ class Rectangle:
     def __str__(self):
         """Returns a str representation of a rectangle instance with '#'"""
         if self.__height == 0 or self.__width == 0:
-            return
+            return ""
         s_str = ""
         for i in range(self.__height):
             for j in range(self.__width):
