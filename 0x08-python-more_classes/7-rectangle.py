@@ -6,6 +6,7 @@ class Rectangle:
     """Rectangle class"""
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """Initializes instance"""
@@ -17,12 +18,9 @@ class Rectangle:
         """Returns a str representation of a rectangle instance with '#'"""
         if self.__height == 0 or self.__width == 0:
             return ""
-        s_str = ""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                s_str += '#'
-            s_str += '\n'
-        return s_str[:-1]
+        else:
+            return (f"{str(self.print_symbol)*self.width}\n" 
+                    * self.height).strip('\n')
 
     def __repr__(self):
         """Representation of a rectangle"""
@@ -32,7 +30,6 @@ class Rectangle:
         """Delete an instance"""
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
-
 
     def area(self):
         """returns area"""
