@@ -6,7 +6,7 @@ class Square extends Rectangle {
     super(size, size);
   }
   charPrint (c) {
-   if (c === undefined) {{
+   if (c === undefined) {
     console.log(('X'.repeat(this.width) + '\n').repeat(this.height - 1) + 'X'.repeat(this.width));
    }
    else {
