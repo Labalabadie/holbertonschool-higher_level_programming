@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script lists all states in db hbtn_00_0_usa"""
+"""Script lists all states starting with 'N' in db hbtn_00_0_usa"""
 
 if __name__ == '__main__':
     import MySQLdb
