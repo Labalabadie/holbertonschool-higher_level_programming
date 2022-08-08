@@ -19,6 +19,4 @@ if __name__ == "__main__":
     if states_list:
         for state in states_list:
             print("{}: {}".format(state.id, state.name))
-    else:
-        print("Not found")
     session.close()
