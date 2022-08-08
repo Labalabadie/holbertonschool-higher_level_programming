@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""adds the State object “Louisiana”
+"""Prints a State object with nmae passed as argument
 to the database hbtn_0e_6_usa"""
 
 if __name__ == "__main__":
