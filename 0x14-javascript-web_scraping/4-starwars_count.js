@@ -2,14 +2,20 @@
 
 const axios = require('axios').default;
 
-const url = 'https://swapi-api.hbtn.io/api/films/';
-
 axios.get(process.argv[2])
   .then(function (response) {
     // handle success
     const films = response.data.results;
-    console.log(films.filter((elem) =>
-      elem.characters.includes('https://swapi-api.hbtn.io/api/people/18/')).length);
+    let i = 0;
+    let film, character;
+    for (film in films) {
+      for (character in films[film].characters) {
+        if (films[film].characters[character].includes('/18/')) {
+          i++;
+        }
+      }
+    }
+    console.log(i);
   })
   .catch(function (error) {
     // handle error
