@@ -3,7 +3,7 @@
 const axios = require('axios').default;
 const fs = require('fs');
 
-//const url = 'http://loripsum.net/api loripsum';
+// const url = 'http://loripsum.net/api loripsum';
 
 axios.get(process.argv[2])
   .then(function (response) {
